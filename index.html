@@ -1,39 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/introStyles.css">
-    <link rel="icon" type="image/x-icon" href="images/house-solid.svg">
-    <title>Giovannie Marrero Website</title>
+    <link rel="stylesheet" href="CSS/indexStyles.css">
+    <link rel="icon" type="image/x-icon" href="/images/house-solid.svg">
+    <script src="https://kit.fontawesome.com/be29eddeb1.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio Website</title>
 </head>
+
 <body>
-    <a href="Html/about.html" class="name" target="_self">
-      <img src="images/myLogo2.jpg" class="myLogo" alt="GM image"/>
-	  </a>
-  	<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
-  	<label for="menu-icon"></label>
-    <nav class="nav">
+    <!----------------header------------------>
+    <div id="header">
         <div class="container">
-          <ul class="list">
-            <li><a href="Html/about.html"><b>About</b></a></li>
-            <li><a href="Html/portfolio.html"><b>Portfolio</b></a></li>
-            <li><a href="Html/about.html"><b>Contact Me</b></a></li>
-          </ul>
+            <nav>
+                <img src="images/myLogo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Undergraduate</p>
+                <h1>Hi, I'm <br><span>Giovannie Marrero</span></h1>
+            </div>
         </div>
-      </nav>
-      <div class="section-center">
-        <svg width="100%" height="100%">
-            <text x="50%" y="60%"  text-anchor="middle"  >
-                Welcome 
-                to 
-                my 
-                Website!
-            </text>
-        </svg>
-        
     </div>
-      
+    <!----------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/Me_4.png" alt="Profile_pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm currently a student at the University of Puerto Rico in
+                        Bayamon graduating in December 2023 with in-depth knowledge about programming in
+                        Java, C, F#, Python, SQL, HTML, CSS, React and Javascript.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Relevant Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('activities')">Activities</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span>
+                                <br>&emsp; HTML5, CSS3, Javascript, Python, Django, SQL</li>
+                            <li><span>Software Development</span>
+                                <br>&emsp; Java, C, F#</li>
+                            <li><span>Data Science and Analytics</span>
+                                <br>&emsp; Python, SQL, PowerBI, Tableau, Excel</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>August 2022 - December 2022</span>
+                                <br>&emsp; Tutor at UPRB Educational Services</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Current</span>
+                                <br>&emsp; Data Science and Analytics Certificate at Sagrado Corazon University</li>
+                            <li><span>2018 - 2023</span>
+                                <br>&emsp; Bachelor's Degree at University of Puerto Rico in Bayamon</li>
+                            <li><span>2008 - 2018</span>
+                                <br>&emsp; High School Degree at Academia Santa Rosa de Lima</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="activities">
+                        <ul>
+                            <li><span>August 2022 - Current</span>
+                                <br>&emsp; Board Member of the Computer Science Student Asociation (AECC)</li>
+                            <li><span>May 2022</span>
+                                <br>&emsp; Participated at UPRB Intercollegiate Programming Competition</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------services------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-lists">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>As a web developer with extensive experience in HTML, CSS, and Javascript, and further
+                        training in Python and Django, I offer exceptional web development services to clients
+                        looking to build engaging and dynamic websites. Whether you're looking to launch a new
+                        e-commerce platform, create a portfolio website, or develop a complex web application,
+                        I have the technical skills and creative vision to bring your ideas to life. With a
+                        focus on clean, user-friendly design and robust, scalable coding, I am dedicated to
+                        helping you achieve your web development goals and establish a strong online presence</p>
+                    <!--<a href="#">Learn More</a>-->
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Software Developer</h2>
+                    <p>As a software developer with extensive experience in Java, Python, C, F#, and SQL, I offer
+                        top-notch software development services to organizations and businesses.
+                        Whether you're looking to build a new application, modernize an existing one, or optimize
+                        your software development workflow, I have the technical expertise and problem-solving skills
+                        to deliver high-quality solutions that meet your specific needs and requirements. With a deep
+                        understanding of the latest technologies and industry best practices, I am committed to helping
+                        you achieve your software development goals and take your business to the next level.</p>
+                    <!--<a href="#">Learn More</a>-->
+                </div>
+                <div>
+                    <i class="fa-solid fa-school"></i>
+                    <h2>Tutoring</h2>
+                    <p>As a computer science tutor, I offer personalized and comprehensive instruction to students of
+                        all levels.
+                        I tailor my teaching approach to each student's unique learning style and pace, and help them
+                        gain a deep
+                        understanding of key computer science concepts, programming languages, and software development
+                        methodologies.
+                        Whether you're a beginner just starting out or an advanced student looking to refine your
+                        skills, I am
+                        dedicated to helping you achieve your goals and succeed in your studies.</p>
+                    <!--<a href="#">Learn More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------Portfolio------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/markus-spiske-1LLh8k2_YFk-unsplash.jpg">
+                    <div class="layer">
+                        <h3>Alexis Transport Inc. Website</h3>
+                        <p>Ongoing project at the moment</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/jefferson-santos-V9sv7QrDUgc-unsplash.jpg">
+                    <div class="layer">
+                        <h3>Cards Against Humanity</h3>
+                        <p>Designed and developed a recreation of the adult card game Cards Against Humanity
+                            implementing front-end and back-end communication using Java libraries such as Java Sockets
+                            and Java Thread. It also uses Hamachi VPN for the remote connection requirements of the game
+                        </p>
+                        <a href="https://github.com/jeanlgonzalez01/Cards-against-humanity-project"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/safar-safarov-koOdUvfGr4c-unsplash.jpg">
+                    <div class="layer">
+                        <h3>Image Manipulation App</h3>
+                        <p>Built a program using Java and applying the fundamentals of steganography to hide a message
+                            inside a .ppm image and a .ppm image within another .ppm image.</p>
+                        <a href="https://github.com/giovannie-marrero/Image-Manipulation"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/giovannie-marrero" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------Contact------------------>
+    <div id="contact">
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:giovannie.marrero@upr.edu">giovannie.marrero@upr.edu</a>
+                        </p>
+                        <div class="social-icons">
+                            <a href="https://github.com/giovannie-marrero" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/giovannie-marrero-barreto/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="/Resume/Giovannie Marrero (Computer Science Oriented).pdf" download
+                            class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class=" btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Giovannnie Marrero</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxa1vgI0NqInQwswAIG7sELXYr-EA4-wtyYMNd0yjsZ6cGIum4EbdROFlfp8aV6KvRutw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent succesfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
+
 </html>
