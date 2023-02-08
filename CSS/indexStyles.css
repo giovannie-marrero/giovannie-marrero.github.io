@@ -662,6 +662,12 @@ nav .fas{
   }
 }
 
+@media screen and (max-width: 1200px) and (min-width: 1001px){
+  .playground-left a{
+    padding: 15px;
+  }
+}
+
 #msg{
   color: #61b752;
   margin-top: -40px;
