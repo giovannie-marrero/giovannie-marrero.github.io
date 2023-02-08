@@ -22,6 +22,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#playground">Playground</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
@@ -175,6 +176,23 @@
             <a href="https://github.com/giovannie-marrero" target="_blank" class="btn">See more</a>
         </div>
     </div>
+    <!----------------Playground------------------>
+    <div id="playground">
+        <div class="container">
+            <div class="row">
+                <div class="playground-left">
+                    <h1 class="sub-title">Gaming Playground</h1>
+                    <a href="/HTML/playground.html">Explore More</a>
+                </div>
+                <div class="playground-right">
+                    <p>This playground is an ongoing project at the moment that will display a series 
+                        of side projects together in one single page. It will include games such as Minesweeper,
+                         Tic Tac Toe, Memory game, and useful features such as a BMI, a tip, an a normal calculator,
+                         a calendar, a to-do list and various fun online quiz systems (Like a Pokemon or Harry Potter quiz)</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!----------------Contact------------------>
     <div id="contact">
         <div class="contact">
@@ -239,7 +257,8 @@
         }
     </script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxa1vgI0NqInQwswAIG7sELXYr-EA4-wtyYMNd0yjsZ6cGIum4EbdROFlfp8aV6KvRutw/exec'
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbxa1vgI0NqInQwswAIG7sELXYr-EA4-wtyYMNd0yjsZ6cGIum4EbdROFlfp8aV6KvRutw/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
 
@@ -251,7 +270,7 @@
                 })
                 .then(response => {
                     msg.innerHTML = "Message sent succesfully"
-                    setTimeout(function(){
+                    setTimeout(function () {
                         msg.innerHTML = ""
                     }, 5000)
                 })

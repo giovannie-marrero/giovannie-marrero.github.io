@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-color: #001220;
+    overflow-y: hidden;
+}
+
+.spacer {
+    width: 100%;
+    height: 100vh;
+    background: url(/images/blob-scene-haikei.svg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+.spacer h1 {
+    font-size: 100px;
+    font-weight: 900;
+
+}
+
+span {
+    position: relative;
+    animation-name: moving-words;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition: color 0.5s;
+}
+
+span:hover{
+    color: #FBAE3C;
+}
+
+.word-1 {
+    animation-delay: 0s;
+}
+
+.word-2 {
+    animation-delay: 0.75s;
+}
+
+.word-3 {
+    animation-delay: 1.5s;
+}
+
+.word-4 {
+    animation-delay: 2.25s;
+}
+
+.word-5 {
+    animation-delay: 3s;
+}
+
+.word-6 {
+    animation-delay: 3.75s;
+}
+
+.word-7 {
+    animation-delay: 4.5s;
+}
+
+.word-8 {
+    animation-delay: 5.25s;
+}
+
+.word-9 {
+    animation-delay: 6s;
+}
+
+.word-10 {
+    animation-delay: 6.75s;
+}
+
+@keyframes moving-words {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: -50px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .spacer {
+        background: url(/images/blob-scene-haikei\ \(1\).svg);
+    }
+
+    .spacer h1{
+        font-size: 30px;
+    }
+
+    @keyframes moving-words {
+        0% {
+            top: 0px;
+        }
+    
+        50% {
+            top: -30px;
+        }
+    
+        100% {
+            top: 0px;
+        }
+    }
+}
+
+@media  screen and (max-width: 1200px) and (min-width: 601px) {
+
+    .spacer {
+        background: url(/images/blob-scene-haikei3.svg);
+    }
+    
+    .spacer h1{
+        font-size: 60px;
+    }
+
+    @keyframes moving-words {
+        0% {
+            top: 0px;
+        }
+    
+        50% {
+            top: -30px;
+        }
+    
+        100% {
+            top: 0px;
+        }
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1200px){
+    .spacer{
+        background: url(/images/blob-scene-haikei4.svg);
+    }
+}
